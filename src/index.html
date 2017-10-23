@@ -13,31 +13,89 @@
 
     <body>
 
-    <header>
-      <div class="row">
+      <header>
+        <div class="row">
+          <div class="col">
+          </div>
+          <div class=" col-lg-5">
+            <h1>Hello, how can we help?</h1>
+            
+            <form class="search" method="get" action="actionMan">
+              <label class="sr-only" for="searchBar">Search For</label>
+              <input id="searchBar" type="text" value="" placeholder="Search the knowledge base..." name="s" autocomplete="off">
+              <img class="search__loader" src="/img/loading.svg" alt="Searching...">
+              <input type="hidden" name="kb_search" value="1">
+              <button class="sr-only" type="submit">
+                <span>Search</span>
+              </button>
+            </form>
 
-        <div class="col">
+           
+           
+          </div>
+          <div class="col">
+          </div>
         </div>
-        <div class=" col-lg-8">
-          <h1 class="display-3">Hello, world!</h1>
-          <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
-          <hr class="my-4">
-          <p>
-            It uses utility classes for typography and spacing to space content out within the larger container.
-          </p>
-          <p class="lead">
-            <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
-          </p>
-        </div>
-        <div class="col">
-          
-        </div>
-      </div>
-    </header>
-    
+      </header>
 
-        <script src="/js/jquery.min.js"></script>
-        <script src="/js/tether.min.js"></script>
-        <script src="/js/bootstrap.min.js"></script>
+      <section class="kb_home">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <h2>Articles</h2>
+            </div>
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="row">
+
+
+
+
+            <div class="col articleStub">
+              <div class="row">
+                <div class="col-md-3">
+                  <i class="fa fa-check"></i>
+                </div>
+                <div class="col-md-9">
+                  <div class="category">
+                    <h2 class="title"> Sending a parcel</h2>
+                    <div class="description"> Send your parcel, easy as 123</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+             <div class="col articleStub">
+              <div class="row">
+                <div class="col-md-3">
+                  <i class="fa fa-check"></i>
+                </div>
+                <div class="col-md-9">
+                  <div class="category">
+                    <h2 class="title"> Sending a parcel</h2>
+                    <div class="description"> Send your parcel, easy as 123</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+
+
+
+          </div>
+
+        </div>
+
+
+
+      </section>
+       <hr class="my-4">
+
+      <script src="/js/jquery.min.js"></script>
+      <script src="/js/popper.min.js"></script>
+      <script src="/js/bootstrap.min.js"></script>
     </body>
 </html>

@@ -2,4 +2,77 @@ body {
   background: #f4f5f5; }
 
 header {
+  padding: 50px 0;
   background-color: #00b4b3; }
+  header h1 {
+    font-size: 28px;
+    color: #fff;
+    text-align: center;
+    margin: 0 0 25px 0; }
+
+section h2 {
+  border-bottom: 1px solid #e6e6e6;
+  padding: 0 0 10px;
+  font-size: 22px;
+  color: #3e4548; }
+
+section.kb_home {
+  padding: 60px 0; }
+
+textarea, select, input[type='date'], input[type='datetime'], input[type='datetime-local'], input[type='email'], input[type='month'], input[type='number'], input[type='password'], input[type='search'], input[type='tel'], input[type='text'], input[type='time'], input[type='url'], input[type='week'] {
+  background: #fff;
+  border: 1px solid rgba(204, 204, 204, 0.5);
+  color: #595959;
+  padding: 10px 12px;
+  outline: 0;
+  margin: 0;
+  vertical-align: middle;
+  width: 400px;
+  max-width: 100%; }
+
+#searchBar {
+  -webkit-border-radius: 99px;
+  -moz-border-radius: 99px;
+  -ms-border-radius: 99px;
+  border-radius: 99px;
+  display: block;
+  width: 100%;
+  padding: 18px 20px 18px 45px;
+  border: 0;
+  outline: none;
+  box-shadow: 0 0 0 5px rgba(255, 255, 255, 0.15); }
+
+.search::after {
+  position: absolute;
+  display: block;
+  content: '';
+  background: url(../img/search.svg) no-repeat center center;
+  background-size: 20px;
+  height: 20px;
+  width: 20px;
+  top: 74%;
+  left: 30px;
+  margin-top: -10px;
+  opacity: .7; }
+
+.search .search__loader {
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  margin-top: -10px;
+  height: 20px;
+  width: 30px;
+  opacity: 0; }
+
+/* articles */
+.articleStub h2 {
+  border: 0;
+  margin: 10px 0 15px 0; }
+
+.articleStub .fa {
+  font-size: 5em; }
